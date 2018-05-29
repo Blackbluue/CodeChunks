@@ -24,11 +24,13 @@
 
 package com.miller.codechunksjava.fx;
 
+import java.awt.TextField;
+
 /**
  *
  * @author mille
  */
-public class FilterBar {
+public class FilterBar extends TextField {
    /*+---------------------------------------------------------------+
      +                                                               +
      +                            Fields                             +
