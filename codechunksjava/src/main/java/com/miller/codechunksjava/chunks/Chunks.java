@@ -85,6 +85,10 @@ public class Chunks {
       s.append(calendar.get(Calendar.DAY_OF_MONTH));
       return s.toString();
    }
+   
+   public static String test() {
+      return "";
+   }
 
    /*+---------------------------------------------------------------+
      +                                                               +
