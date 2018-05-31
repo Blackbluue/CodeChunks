@@ -78,7 +78,7 @@ public class Chunks {
     * 
     * @return A string representing the Calendar.
     */
-   public String calendarString(Calendar calendar) {
+   public static String calendarString(Calendar calendar) {
       StringBuilder s = new StringBuilder();
       s.append(calendar.get(Calendar.YEAR)).append("/");
       s.append(calendar.get(Calendar.MONTH)).append("/");
