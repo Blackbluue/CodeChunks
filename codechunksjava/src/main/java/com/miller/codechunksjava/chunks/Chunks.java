@@ -24,6 +24,8 @@
 
 package com.miller.codechunksjava.chunks;
 
+import java.util.Calendar;
+
 /**
  *
  * @author mille
@@ -66,6 +68,22 @@ public class Chunks {
       StringBuilder sBuilder = new StringBuilder(string);
       sBuilder.setCharAt(0, Character.toUpperCase(string.charAt(0)));
       return sBuilder.toString();
+   }
+   
+   /**
+    * Returns a simplified string representation of the Calendar object, 
+    * in the form "yyyy/mm/dd".
+    * 
+    * @param calendar The Calendar to convert.
+    * 
+    * @return A string representing the Calendar.
+    */
+   public String calendarString(Calendar calendar) {
+      StringBuilder s = new StringBuilder();
+      s.append(calendar.get(Calendar.YEAR)).append("/");
+      s.append(calendar.get(Calendar.MONTH)).append("/");
+      s.append(calendar.get(Calendar.DAY_OF_MONTH));
+      return s.toString();
    }
 
    /*+---------------------------------------------------------------+
